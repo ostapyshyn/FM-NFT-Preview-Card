@@ -1,24 +1,119 @@
 main {
   width: 100%;
   overflow-y: auto;
-  border: 1px solid red;
   max-width: 350px;
+  padding: 24px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
   background-color: var(--very-dark-blue-card);
+  border-radius: 15px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   h1 {
-    font-family: 'Outfit';
     font-weight: 600;
     font-size: 22px;
     line-height: 28px;
-    color: #ffffff;
+    color: var(--white);
+    margin-bottom: 16px;
+
+    &:hover {
+      color: var(--cyan);
+      cursor: pointer;
+    }
+  }
+
+  h2 {
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 18px;
+    color: var(--soft-blue);
+    margin-bottom: 24px;
   }
 
   img {
     max-width: 100%;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    &:hover {
+      background-color: var(--cyan);
+      cursor: pointer;
+      filter: gray;
+    }
+  }
+  .ethereum {
+    display: flex;
+    align-items: center;
+
+    .eth {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--cyan);
+      margin-left: 8px;
+    }
+  }
+
+  .time {
+    display: flex;
+    align-items: center;
+
+    .days {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--soft-blue);
+      margin-left: 8px;
+    }
+  }
+
+  .info {
+    width: 100%;
+    margin-bottom: 24px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .avatar {
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+  }
+
+  footer {
+    border-top: 1px solid var(--very-dark-blue-line);
+    padding-top: 16px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-bottom: 0px;
+    }
+
+    .name {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--soft-blue);
+      width: 100%;
+      margin-left: 16px;
+
+      span {
+        margin-left: 2px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--white);
+        &:hover {
+          color: var(--cyan);
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
