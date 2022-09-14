@@ -1,0 +1,24 @@
+main {
+  width: 100%;
+  overflow-y: auto;
+  border: 1px solid red;
+  max-width: 350px;
+  background-color: var(--very-dark-blue-card);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: 'Outfit';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
