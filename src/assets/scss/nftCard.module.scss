@@ -12,11 +12,38 @@ main {
   justify-content: center;
   align-items: flex-start;
 
+  .container {
+    position: relative;
+
+    div {
+      position: absolute;
+      top: 0;
+      background-color: hsla(178, 100%, 50%, 50%);
+      width: 100%;
+      height: calc(100% - 4px);
+      z-index: 999;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 8px;
+      svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
   h1 {
     font-weight: 600;
     font-size: 22px;
     line-height: 28px;
     color: var(--white);
+    margin-top: 24px;
     margin-bottom: 16px;
 
     &:hover {
@@ -35,7 +62,6 @@ main {
 
   img {
     max-width: 100%;
-    margin-bottom: 24px;
     border-radius: 8px;
     &:hover {
       background-color: var(--cyan);

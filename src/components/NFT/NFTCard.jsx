@@ -11,7 +11,12 @@ import styles from '../../assets/scss/nftCard.module.scss';
 function NFTCard() {
   return (
     <main>
-      <img src={nft} alt="nft-img" />
+      <article className={styles.container}>
+        <img src={nft} alt="nft-img" className={styles.image} />
+        <div>
+          <View />
+        </div>
+      </article>
 
       <h1>Equilibrium #3429</h1>
       <h2>Our Equilibrium collection promotes balance and calm.</h2>
